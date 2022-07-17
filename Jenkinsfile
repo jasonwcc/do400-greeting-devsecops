@@ -30,6 +30,9 @@ stage('Push to Quay') {
  }
 }
 
+
+}
+    }
 post {
  failure {
  withCredentials([usernamePassword(
@@ -46,7 +49,4 @@ post {
  """
  }
  }
-
-}
-    }
 }
