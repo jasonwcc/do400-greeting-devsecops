@@ -13,7 +13,7 @@ pipeline {
         }
 
         // Add more stages here
-	stage('Deploy''){
+	stage('Deploy'){
 	    steps {
                sh '''
                   oc start-build greeting-devsecops --follow --wait \
